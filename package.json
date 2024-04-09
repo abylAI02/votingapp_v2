@@ -1,7 +1,7 @@
 {
   "name": "votingtype",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -19,11 +19,9 @@
     "react-dom": "^18.2"
   },
   "devDependencies": {
-    "@types/node": "^18.11.11",
-    "@types/react": "^18",
-    "eslint": "^8.29.0",
+    "@types/react": "^18.2.75",
+    "eslint": "8.11.0",
     "eslint-config-next": "^13",
-    "gh-pages": "^6.1.1",
-    "typescript": "^4.9.4"
+    "typescript": "^5.4.4"
   }
 }

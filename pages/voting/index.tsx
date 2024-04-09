@@ -9,8 +9,8 @@ const Home: NextPage = () => {
   const contractAddress = "0x3C25E99abB35007Dd4e3d0BC0dA2f92899351237";
 
   const { contract } = useContract(contractAddress);
-  const { data: proposals, isLoading: proposalsLoading } = useContractRead(contract, "proposals", "0");
-  const { data: hasVoted, isLoading: hasVotedLoading } = useContractRead(contract, "hasVoted", "0", address);
+  const { data: proposals, isLoading: proposalsLoading } = useContractRead(contract, "proposals", [0]);
+  const { data: hasVoted, isLoading: hasVotedLoading } = useContractRead(contract, "hasVoted", [0, address]);
 
   return (
   <div className={styles.container}>
@@ -55,3 +55,5 @@ const Home: NextPage = () => {
 };
 
 export default Home;
+
+    // "deploy": "next build && next export && npx thirdweb@latest upload out",
