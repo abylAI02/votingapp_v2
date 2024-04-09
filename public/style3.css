@@ -1,0 +1,87 @@
+body{
+  background-color: #e9ecef;
+}
+.no-bullets {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.output {
+    background: #eee;
+}
+
+
+.navbar{
+
+  text-align: left;
+  font-family: 'Ubuntu';
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #ffb3b3;
+  color: white;
+  font-family: 'Ubuntu';
+  font-size: 13px;
+}
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.float-container {
+    padding: 20px;
+}
+
+.float-child {
+    width: 50%;
+    float: left;
+    padding: 20px;
+    align-self: auto;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #6ecbea;
+  opacity: 0.5;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  transform: scale(0);
+  transition: .3s ease;
+}
+
+.container:hover .overlay {
+  transform: scale(1);
+}
+
+.text {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
