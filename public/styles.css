@@ -1,3 +1,8 @@
+/* .btn-outline-primary{
+  background-color: #fc7164 !important;
+  color: #fc7164 !important;
+
+} */
 section {
     padding-top: 4rem;
     padding-bottom: 5rem;
@@ -77,7 +82,7 @@ h2 {
 	margin-bottom:15px;
 	color:#d5d5d5;
 }
-#myCarousel .carousel-item a{background:#F47735; font-size:14px; color:#FFF; padding:13px 32px; display:inline-block; }
+#myCarousel .carousel-item a{background:#fc7164; font-size:14px; color:#FFF; padding:13px 32px; display:inline-block; }
 #myCarousel .carousel-item a:hover{background:#394fa2; text-decoration:none;  }
 
 #myCarousel .carousel-item h4{-webkit-animation-name:fadeInLeft; animation-name:fadeInLeft;}
@@ -100,7 +105,7 @@ h2 {
     top: 35%;
     bottom: auto;
     transform: translateY(-50%);
-    background-color: #f47735 !important;
+    background-color: #fd7266 !important;
 }
 
 
@@ -480,6 +485,6 @@ footer p{
   color: #FFFFFF!important;
 }
 .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
-    background-color: #ffb3b3;
-    border-color: #ffb3b3;
+    background-color: #fd7266;
+    border-color: #fd7266;
 }
