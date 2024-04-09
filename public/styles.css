@@ -97,7 +97,7 @@ h2 {
     height: 40px;
     width: 40px;
     padding: 12px;
-    top: 50%;
+    top: 35%;
     bottom: auto;
     transform: translateY(-50%);
     background-color: #f47735 !important;
@@ -118,6 +118,7 @@ h2 {
     backface-visibility: hidden;
     -webkit-perspective: 1000px;
     perspective: 1000px;
+    transform: translateY(+10%) !important;
 }
 .carousel-fade .carousel-item {
 	opacity: 0;

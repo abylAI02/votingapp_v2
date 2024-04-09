@@ -33,7 +33,7 @@ const Home: NextPage = () => {
                       contractAddress={contractAddress}
                       action= {(contract) => contract.call("vote", [0, true])}
                     >Yes</Web3Button>
-                    <br />
+                    <br/>
                     <Web3Button
                       contractAddress={contractAddress}
                       action= {(contract) => contract.call("vote", [0, false])}
