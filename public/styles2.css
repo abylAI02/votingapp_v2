@@ -69,3 +69,31 @@ body{
   text-decoration: none;
   font-size: 14px;
 }
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #343a40;
+  color: white;
+  font-family: 'Ubuntu';
+  font-size: 13px;
+}
+
+footer{
+  background-color: #343a40 !important;
+}
+
+footer a{
+  color: #FFFFFF!important;
+  align-items: center !important;
+}
+
+footer p{
+  color: #FFFFFF!important;
+}
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #fd7266;
+    border-color: #fd7266;
+}
