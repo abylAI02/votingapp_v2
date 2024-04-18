@@ -91,10 +91,12 @@ const Home: NextPage = () => {
   return (
   <div className={styles.container}>
     <main className={styles.main}>
-      <div className={styles.card}>
+      {/* <div className={styles.card}> */}
         <title>Voting Page</title>
-        <ConnectWallet/>
-        <h1>Voting Dapp</h1>
+      <div style={{marginTop: "10px"}}>
+      <ConnectWallet/>
+      </div>
+        <h1>Voting</h1>
         <div>
           {address?(
             <div>
@@ -105,30 +107,36 @@ const Home: NextPage = () => {
               ):(
                 <div>
                   <h2>{proposals[0]}</h2>
-                  <div>
+                  <div style={{marginTop: "10px"}}>
                     <Web3Button
                       contractAddress={contractAddress}
                       action= {(contract) => contract.call("vote", [0, 0])}
                       isDisabled = {hasVoted}
                     >Candidate 1</Web3Button>
-                    <br/>
-                    <Web3Button 
-                      contractAddress={contractAddress}
-                      action= {(contract) => contract.call("vote", [0, 1])}
-                      isDisabled = {hasVoted}
-                    >Candidate 2</Web3Button>
-                    <br/>
-                    <Web3Button
-                      contractAddress={contractAddress}
-                      action= {(contract) => contract.call("vote", [0, 2])}
-                      isDisabled = {hasVoted}
-                    >Candidate 3</Web3Button>
-                    <br/>
-                    <Web3Button
-                      contractAddress={contractAddress}
-                      action= {(contract) => contract.call("vote", [0, 3])}
-                      isDisabled = {hasVoted}
-                    >Candidate 4</Web3Button>
+                    {/* <br/> */}
+                    <div style={{marginTop: "10px"}}>
+                      <Web3Button 
+                        contractAddress={contractAddress}
+                        action= {(contract) => contract.call("vote", [0, 1])}
+                        isDisabled = {hasVoted}
+                      >Candidate 2</Web3Button>
+                    </div>
+                    {/* <br/> */}
+                    <div style={{marginTop: "10px"}}>
+                      <Web3Button 
+                        contractAddress={contractAddress}
+                        action= {(contract) => contract.call("vote", [0, 2])}
+                        isDisabled = {hasVoted}
+                      >Candidate 3</Web3Button>
+                    </div>
+                    {/* <br/> */}
+                    <div style={{marginTop: "10px"}}>
+                      <Web3Button 
+                        contractAddress={contractAddress}
+                        action= {(contract) => contract.call("vote", [0, 3])}
+                        isDisabled = {hasVoted}
+                      >Candidate 4</Web3Button>
+                    </div>
                   </div>
                   <div>
                     {!hasVotedLoading && hasVoted ? (
@@ -154,7 +162,7 @@ const Home: NextPage = () => {
             </div>
           )}
         </div>
-      </div>
+      {/* </div> */}
     </main>
   </div>
   );

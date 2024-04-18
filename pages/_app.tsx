@@ -1,5 +1,5 @@
 import type { AppProps } from "next/app";
-import { ThirdwebProvider, paperWallet } from "@thirdweb-dev/react";
+import { ThirdwebProvider} from "@thirdweb-dev/react";
 import { BinanceTestnet } from "@thirdweb-dev/chains";
 
 import "../styles/globals.css";
