@@ -3,6 +3,11 @@ $('#myCarousel').carousel({
 })
 
 const button = document.getElementById('authLink'); // Replace with your button's ID
+const button1 = document.getElementById('authLink1');
+const button2 = document.getElementById('authLink2');
+const button3 = document.getElementById('authLink3');
+const button4 = document.getElementById('authLink4');
+const button5 = document.getElementById('authLink5');
 const clientId = 'f8326ff9-0b4f-410b-bf29-1d6e27f382d3'; // Replace with your client ID
 const state = 'qwertyio'; // Replace with your desired state value
 const redirectUri = 'https://votingapp-v2.vercel.app/voting'; // Replace with your redirect URI
@@ -20,6 +25,56 @@ button.addEventListener('click', () => {
   window.location.href = authUrl.toString();
 });
 
+button1.addEventListener('click', () => {
+  const authUrl = new URL('https://passport.test.supreme-team.tech/oauth2/auth');
+  authUrl.searchParams.set('response_type', 'code');
+  authUrl.searchParams.set('client_id', clientId);
+  authUrl.searchParams.set('state', state);
+  authUrl.searchParams.set('redirect_uri', redirectUri);
+  authUrl.searchParams.set('scope', scope);
+
+  window.location.href = authUrl.toString();
+});
+button2.addEventListener('click', () => {
+  const authUrl = new URL('https://passport.test.supreme-team.tech/oauth2/auth');
+  authUrl.searchParams.set('response_type', 'code');
+  authUrl.searchParams.set('client_id', clientId);
+  authUrl.searchParams.set('state', state);
+  authUrl.searchParams.set('redirect_uri', redirectUri);
+  authUrl.searchParams.set('scope', scope);
+
+  window.location.href = authUrl.toString();
+});
+button3.addEventListener('click', () => {
+  const authUrl = new URL('https://passport.test.supreme-team.tech/oauth2/auth');
+  authUrl.searchParams.set('response_type', 'code');
+  authUrl.searchParams.set('client_id', clientId);
+  authUrl.searchParams.set('state', state);
+  authUrl.searchParams.set('redirect_uri', redirectUri);
+  authUrl.searchParams.set('scope', scope);
+
+  window.location.href = authUrl.toString();
+});
+button4.addEventListener('click', () => {
+  const authUrl = new URL('https://passport.test.supreme-team.tech/oauth2/auth');
+  authUrl.searchParams.set('response_type', 'code');
+  authUrl.searchParams.set('client_id', clientId);
+  authUrl.searchParams.set('state', state);
+  authUrl.searchParams.set('redirect_uri', redirectUri);
+  authUrl.searchParams.set('scope', scope);
+
+  window.location.href = authUrl.toString();
+});
+button5.addEventListener('click', () => {
+  const authUrl = new URL('https://passport.test.supreme-team.tech/oauth2/auth');
+  authUrl.searchParams.set('response_type', 'code');
+  authUrl.searchParams.set('client_id', clientId);
+  authUrl.searchParams.set('state', state);
+  authUrl.searchParams.set('redirect_uri', redirectUri);
+  authUrl.searchParams.set('scope', scope);
+
+  window.location.href = authUrl.toString();
+});
 // function generateRandomString() {
 //     const array = new Uint32Array(28);
 //     window.crypto.getRandomValues(array);
