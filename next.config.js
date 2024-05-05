@@ -7,6 +7,14 @@ const nextConfig = {
       source: "/",
       destination: "/index.html",
     },
+    {
+      source: "/about",
+      destination: "/main2.html",
+    },
+    {
+      source: "/developers",
+      destination: "/main3.html",
+    },
   ],
 };
 
