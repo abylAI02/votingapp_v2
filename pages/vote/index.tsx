@@ -147,6 +147,7 @@ const Home: NextPage = () => {
                         <p>Candidate 3: {proposals[3].toNumber()}</p>
                         <p>Candidate 4: {proposals[4].toNumber()}</p>
                       </div>
+                      // alert('No rows');
                     ):(
                       <div>
                         <p>You have not voted yet.</p>

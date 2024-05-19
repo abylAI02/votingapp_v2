@@ -11,7 +11,7 @@ const button5 = document.getElementById('authLink5');
 const clientId = 'f8326ff9-0b4f-410b-bf29-1d6e27f382d3'; // Replace with your client ID
 const state = 'qwertyio'; // Replace with your desired state value
 const redirectUri = 'https://votingapp-v2.vercel.app/voting'; // Replace with your redirect URI
-const scope_face = 'openid phone first_name last_name birth_date liveness_3d'; 
+const scope_face = 'openid phone first_name last_name birth_date iin'; 
 const scope = 'openid phone first_name last_name birth_date'; 
 
 button.addEventListener('click', () => {

@@ -7,12 +7,6 @@ body{
   margin: 0;
 }
 
-.iframe {
-    float: right;
-    margin-left: 10px;
-
-}
-
 .clearfix::after {
   content: "";
   clear: both;

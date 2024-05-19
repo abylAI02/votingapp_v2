@@ -485,6 +485,11 @@ align-items: center !important;
 footer p{
 color: #FFFFFF!important;
 }
+
+footer h6{
+  color: #9a9da0!important;
+}
+
 .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
   background-color: #fd7266;
   border-color: #fd7266;

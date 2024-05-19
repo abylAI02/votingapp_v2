@@ -15,6 +15,10 @@ const nextConfig = {
       source: "/developers",
       destination: "/main3.html",
     },
+    {
+      source: "/voting",
+      destination: "/voting.html",
+    },
   ],
 };
 
