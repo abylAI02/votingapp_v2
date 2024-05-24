@@ -3,6 +3,9 @@
   color: #fc7164 !important;
 
 } */
+#recaptcha-container {
+  margin-bottom: 20px;
+}
 
 section {
   padding-top: 4rem;
@@ -387,12 +390,12 @@ overflow : visible;
 background-color: black !important;
 color: #FFFFFF !important;
 }
-
+/* 
 .{
 overflow : visible;
 background-color: black !important;
 color: #FFFFFF !important;
-}
+} */
 
 
 .table,

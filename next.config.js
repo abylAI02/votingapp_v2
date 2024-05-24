@@ -20,6 +20,23 @@ const nextConfig = {
       destination: "/voting.html",
     },
   ],
+  images: { // Add the 'images' configuration inside 'nextConfig'
+    remotePatterns: [
+      {
+        protocol: 'https', 
+        hostname: 'www.webcoderskull.com',
+        port: '',
+        // pathname: '/account123/**', // Uncomment if needed
+      },
+      {
+        protocol: 'https',
+        hostname: 'i.ibb.co.com', // Correct the hostname
+        port: '',
+        // pathname: '/account123/**', // Uncomment if needed
+      },
+    ],
+  },
 };
+
 
 module.exports = nextConfig;

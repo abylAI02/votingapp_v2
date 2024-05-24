@@ -1,6 +1,38 @@
 $('#myCarousel').carousel({
    interval: 3000,
 })
+const recaptchaWidget = document.getElementById('recaptcha-widget');
+const recaptchaForm = document.getElementById('recaptcha-form');
+
+$(document).ready(function() {
+  $.ajax({
+    url: 'https://api.geoapify.com/v1/ipinfo?&apiKey=4fe4a28671bf4a2b855282eafedad6c5', 
+    dataType: 'json', 
+    success: function(data) {
+      if (data.country.iso_code === 'KZ') {
+        $("#page-content").show(); 
+      } else {
+        $("#blocked-message").show(); 
+        console.log("Blocked country:", data.country.iso_code); 
+      }
+    },
+    error: function(error) {
+      console.error("Error fetching geolocation data:", error);
+    }
+  });
+});
+
+// Initialize reCAPTCHA
+grecaptcha.ready(function() { 
+grecaptcha.render('recaptcha-widget', {
+  'sitekey': '6Ld7LeYpAAAAADdMlwK6QZwn5vsHcsZ5SMgxNEH4',
+  'size': 'invisible', // You can choose the size (invisible, normal, compact)
+  'callback': () => {
+    // Called when the user successfully solves the reCAPTCHA
+    submitButton.disabled = false;
+  }
+});
+});
 
 const button = document.getElementById('authLink'); // Replace with your button's ID
 const button1 = document.getElementById('authLink1');

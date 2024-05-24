@@ -11,7 +11,11 @@
     "deploy": "next build && next export && npx thirdweb@latest upload out"
   },
   "dependencies": {
-    "@thirdweb-dev/react": "^4",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@mui/icons-material": "^5.15.18",
+    "@mui/material": "^5.15.18",
+    "@thirdweb-dev/react": "^4.6.25",
     "@thirdweb-dev/sdk": "^4",
     "@types/react-dom": "^18.3.0",
     "ethers": "^5",
@@ -20,9 +24,9 @@
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "@types/react": "^18.3.1",
+    "@types/react": "^18.3.2",
     "eslint": "8.11.0",
     "eslint-config-next": "^14.2.3",
-    "typescript": "^5.4.4"
+    "typescript": "^5.4.5"
   }
 }
