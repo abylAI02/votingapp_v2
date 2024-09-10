@@ -34,7 +34,7 @@
     }
   </style>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://www.google.com/recaptcha/enterprise.js?render=6Ld7LeYpAAAAADdMlwK6QZwn5vsHcsZ5SMgxNEH4"></script> 
+  <script src="https://www.google.com/recaptcha/enterprise.js?render="></script> 
 </head>
 <body>
 
@@ -69,7 +69,7 @@
 
     function onSubmit(event) {
       event.preventDefault(); 
-      grecaptcha.execute('6Ld7LeYpAAAAADdMlwK6QZwn5vsHcsZ5SMgxNEH4', { action: 'submit' })
+      grecaptcha.execute('', { action: 'submit' })
         .then(token => {
           console.log("reCAPTCHA Token: " + token);
           // *** IMPORTANT: Send the token to your server-side logic ***
@@ -83,7 +83,7 @@
 
     $(document).ready(function() {
         $.ajax({
-            url: 'https://ipinfo.io/json?token=95e7336d451ddd',
+            url: 'https://ipinfo.io/json?token=',
             dataType: 'json',
             success: function(data) {
                 $("#geo-info").hide(); // Hide loading message
@@ -101,7 +101,7 @@
     // Initialize reCAPTCHA
     grecaptcha.ready(function() { 
       grecaptcha.render('recaptcha-widget', {
-        'sitekey': '6Ld7LeYpAAAAADdMlwK6QZwn5vsHcsZ5SMgxNEH4',
+        'sitekey': '',
         'size': 'invisible', // You can choose the size (invisible, normal, compact)
         'callback': () => {
           // Called when the user successfully solves the reCAPTCHA
