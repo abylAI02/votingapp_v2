@@ -4,7 +4,7 @@ const button2 = document.getElementById('authLink2');
 const button3 = document.getElementById('authLink3');
 const button4 = document.getElementById('authLink4');
 const button5 = document.getElementById('authLink5');
-const clientId = 'f8326ff9-0b4f-410b-bf29-1d6e27f382d3'; // Replace with your client ID
+const clientId = ''; // Replace with your client ID
 const state = 'qwertyio'; // Replace with your desired state value
 const redirectUri = 'https://votingapp-v2.vercel.app/voting'; // Replace with your redirect URI
 const scope_face = 'openid phone first_name last_name birth_date iin'; 
@@ -136,7 +136,7 @@ grecaptcha.render('recaptcha-widget', {
 
 // authLink.addEventListener('click', () => {
 //     function generateAuthUrl(...scopes) {
-//         const clientId = "f8326ff9-0b4f-410b-bf29-1d6e27f382d3";
+//         const clientId = "";
 //         const redirectUri = "https://votingapp-v2.vercel.app/voting"
 //         return new Promise((resolve, reject) => {
 //             const authUrl = `https://passport.test.supreme-team.tech/oauth2/auth?` +
