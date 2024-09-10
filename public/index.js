@@ -80,7 +80,7 @@ const recaptchaForm = document.getElementById('recaptcha-form');
 
 $(document).ready(function() {
   $.ajax({
-    url: 'https://api.geoapify.com/v1/ipinfo?&apiKey=4fe4a28671bf4a2b855282eafedad6c5', 
+    url: 'https://api.geoapify.com/v1/ipinfo?&apiKey=', 
     dataType: 'json', 
     success: function(data) {
       if (data.country.iso_code === 'KZ') {
