@@ -1,3 +1,4 @@
+[!NOTE] > If you are having problem getting the SMS from the Digital-ID use the default test code which is 00000
 # Development of the Information Security System for Electronic Voting
 
 ## Table of Contents
